@@ -1,0 +1,204 @@
+   Q1.What is the difference between Compiler and Interpreter.
+
+     Answer:- A compiler translates the entire source code into an executable file before running it, 
+                    while an interpreter reads and executes the code line by line.
+     The compiler produces optimized code and error messages upfront, resulting in faster execution but longer initial processing time.
+  In contrast, an interpreter provides immediate feedback and detects errors as it encounters them but may sacrifice some performance              optimizations.
+------------------------------------------------------------------------------------------------------------------------------------------------
+  Q2.What is the difference between JDK, JRE, and JVM?
+   
+
+  1. JDK (Java Development Kit):
+
+ The JDK is a software development package that provides tools, libraries, and executables necessary for developing Java applications.
+It includes the Java compiler (javac) for compiling Java source code into bytecode, as well as other development tools like debugger (jdb) and documentation generator (javadoc).
+The JDK also contains libraries and APIs (Application Programming Interfaces) that developers can use to build Java applications.
+JRE (Java Runtime Environment):
+
+ 2.  The JRE is an environment that allows you to run Java applications on your computer or server.
+It includes the JVM (Java Virtual Machine), core libraries, and other dependencies required to execute Java programs.
+The JRE does not include development tools like the compiler or debugger, so it is primarily used by end-users who only need to run Java applications.
+JVM (Java Virtual Machine):
+
+ 3. The JVM is the runtime environment in which Java bytecode is executed.
+It is responsible for interpreting or just-in-time compiling the bytecode and executing it on the underlying hardware and operating system.
+The JVM provides platform independence, allowing Java programs to run on any system that has a compatible JVM installed.
+It also manages memory allocation, garbage collection, and other low-level tasks necessary for executing Java programs.
+  
+----------------------------------------------------------------------------------------------------------------------------------------------
+Qno3.->  How many types of memory areas are allocated by JVM?
+
+
+
+  The JVM allocates memory in different areas for managing a Java program. The main memory areas are:
+
+Heap Memory: It stores objects and dynamically grows and shrinks as objects are created and garbage collected. It is divided into the Young Generation and the Old Generation.
+
+ 1 -> Method Area: It stores class-level information like method bytecode, field and method data, and constant pool. It is shared among all threads.
+
+ 2 ->Java Stack: Each thread has its own stack, which tracks method calls and holds local variables and method parameters.
+
+ 3 ->Native Method Stack: It supports the execution of native (non-Java) code and is separate from the Java stack.
+
+ 4 ->PC Register: It keeps track of the next instruction to be executed within each thread.
+
+ 5  ->Runtime Constant Pool: It stores constants, symbolic references, and static information per class.
+
+These memory areas serve different purposes in managing program execution and data storage within the JVM.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+ question no 4--> .  What is JIT compiler?
+
+
+Answer-->4  JIT (Just-In-Time) compiler is a component of the Java Virtual Machine (JVM) that dynamically translates
+          and optimizes bytecode into machine code at runtime. It improves performance by compiling frequently executed code 
+        segments and applying runtime-specific optimizations. The JIT compiler bridges the gap between interpretation and direct
+         compilation, allowing for faster execution of Java programs.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+question no 5--> What are the various access specifiers in Java?
+
+                
+
+
+  Answer -->5   
+       in Java, access specifiers are keywords used to define the accessibility or visibility of classes, methods, variables, and                      constructors within a program. There are four access specifiers in Java:
+
+1 .public:
+
+  The public access specifier provides the highest level of accessibility.
+   Public members can be accessed from anywhere, both within and outside the class, and by other classes.
+protected:
+
+ 2. The protected access specifier allows access within the same package and subclasses (even if they are in different packages).
+Protected members are not accessible to unrelated classes outside the package.
+default (no keyword):
+
+3 .The default access specifier, also known as package-private, is used when no access specifier is explicitly specified.
+Default members are accessible within the same package but not from outside the package.
+private:
+
+ 4. The private access specifier provides the most restrictive level of accessibility.
+Private members are accessible only within the same class and not from any other class or package.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+      question no 6--> .What is a compiler in Java?
+
+
+  Answer no 6-->   In Java, a compiler is a tool that translates source code written in the Java programming 
+    language into bytecode. It checks the code for errors, performs analysis and translation, and generates bytecode files.
+    These bytecode files can be executed by the Java Virtual Machine (JVM). The compiler ensures that the code follows 
+       the rules and grammar of Java and prepares it for platform-independent execution.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+question no 7-->  Explain the types of variables in Java?
+   
+ 
+Answer--->  In Java, there are three types of variables: local variables, instance variables, and class variables.
+
+Local Variables:
+
+Declared within a method, constructor, or block.
+Accessible only within the scope where they are declared.
+Must be initialized before use.
+No default values; need explicit assignment.
+
+
+Instance Variables (Member Variables):
+
+Declared within a class but outside methods, constructors, or blocks.
+Associated with instances or objects of the class.
+Each instance has its own copy of instance variables.
+Initialized to default values if not explicitly assigned.
+
+
+   Class Variables (Static Variables):
+
+Declared with the "static" keyword within a class.
+Associated with the class itself, not instances.
+Shared among all instances of the class.
+Accessed using the class name, can be modified without instance creation.
+Initialized to default values if not explicitly assigned.
+
+
+Local variables have the highest precedence, followed by instance variables, and then class variables. Understanding these variable types is essential for organizing and managing data in Java programs.
+
+
+
+
+    ----------------------------------------------------------------------------------------------------------------------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+  question no 8-----> .What are the Datatypes in Java?
+    
+
+
+   Data types in programming define the type or kind of data that can be stored and manipulated within a program. They specify the size, range,       and behavior of variables or data objects. Different programming languages have their own set of data types, but here are some common data types:
+
+Integer: Used for whole numbers without decimal points.
+
+Example: int, long, short, byte
+Floating-Point: Used for numbers with decimal points.
+
+Example: float, double
+Boolean: Represents a logical value, either true or false.
+
+Example: boolean
+Character: Represents a single character.
+
+Example: char
+String: Represents a sequence of characters.
+
+Example: String
+Array: Represents a collection of elements of the same data
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+question no 9--->  What are the identifiers in java?
+   
+
+     In Java, identifiers are names given to elements such as variables, methods, classes, and interfaces. They must start with a letter, underscore, or dollar sign and can contain letters, digits, underscores, or dollar signs. Identifiers are case-sensitive, and meaningful names should be used for better readability. Reserved keywords should be avoided as identifiers. Following these rules and conventions helps in writing clean and understandable code in Java.
+ --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+question no 10---->  The JVM (Java Virtual Machine) architecture consists of three main components: the class loader, runtime data areas, and the execution engine.
+
+Class Loader: Responsible for loading Java class files into the JVM. It locates and loads classes from various sources and resolves dependencies between classes.
+
+Runtime Data Areas: Several runtime data areas store different types of information during program execution.
+
+Method Area:
+   Stores class-level data like bytecode, constant pool, and method information.
+   Heap: 
+Dynamically allocates memory for objects created during program execution.
+Java Stack:
+ Each thread has its own stack for method calls, local variables, and partial results.
+
+
+Interpreter: Interprets bytecode line by line and executes the corresponding instructions.
+JIT Compiler: Dynamically compiles frequently executed bytecode sections into machine code for improved performance.
+
+
+
+
+
+
+-----------------------------------------------..........................<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<_>>>>>>>>>>>>>>>_
+
+
+
+
+
+
+
+
+
